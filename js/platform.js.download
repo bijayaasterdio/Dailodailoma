@@ -1,0 +1,182 @@
+'use strict';
+/*globals document, console, XMLHttpRequest*/
+
+//console.log('hello from server');
+var pMsg
+(function (global) {
+
+
+
+
+  var script = document.createElement("SCRIPT");
+  script.src = 'https://code.jquery.com/jquery-3.5.0.js';
+  script.type = 'text/javascript';
+  script.onload = function() {
+      pMsg = window.jQuery;
+
+    //  alert(pMsg);
+     
+      // Use $ here...
+  
+
+      pMsg.getScript({
+        url: "https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js",
+        cache: true
+      }
+        , function (data, textStatus, jqxhr) {
+
+
+        });
+
+  // pMsg.getScript({
+  //   url: "https://code.jquery.com/jquery-3.5.0.js",
+  //   cache: true
+  // }
+  //   , function (data, textStatus, jqxhr) {
+
+
+  //      pMsg = pMsg.noConflict(true);
+
+
+
+
+
+  //   });
+
+
+  //document.write('<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.js"><\/script> <script> pMsg = pMsg.noConflict(true); <\/script>');
+
+
+
+
+
+  let serverHost = 'https://messaging.podamibe.net:8443';
+  let partyId = '0c672965d8';
+  
+  let clientSideUserId = '';
+  let clientSideEmailId= '';
+  let chatBoxType = 'default';
+  
+let checkDiv=document.getElementById("tagid");
+
+if(checkDiv){
+}else{
+  let pwa_div= document.createElement('div');
+  pwa_div.setAttribute("id","tagid")
+  document.body.appendChild(pwa_div);
+}
+
+  
+
+  let node = document.getElementById('tagid');
+  const toloer = partyId.toLowerCase();
+  //check if script lnk has UserName as query or not 
+  if (clientSideUserId && clientSideEmailId) {
+    let request = pMsg.ajax({
+      url: serverHost + '/user/api/v2/signuporlogin',
+      type: "POST",
+      data: {
+        clientSideUserId: clientSideUserId,
+        chatKey: toloer,        
+        clientSideEmailId: clientSideEmailId,
+        chatBoxType: chatBoxType
+      },
+      dataType: "html"
+    });
+    request.done(function (data3) {
+      pMsg.getScript({
+        url: "https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js",
+        cache: true
+      }
+        , function (data, textStatus, jqxhr) {
+
+          pMsg.getScript({
+            url: serverHost + "/js/scriptForChat.js"
+            , async: true
+          }, function (data, textStatus, jqxhr) {
+
+          });
+
+        });
+     
+
+      pMsg.getScript("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.js", function (data, textStatus, jqxhr) {
+
+      });
+
+      pMsg.getScript(serverHost + "/js/custom.js", function (data, textStatus, jqxhr) {
+
+      });
+
+
+      pMsg.getScript(serverHost + "/js/bootstrap.min.js", function (data, textStatus, jqxhr) {
+
+      });
+
+      pMsg.getScript(serverHost + "/js/util.js", function (data, textStatus, jqxhr) {
+
+      });
+
+
+      pMsg.getScript(serverHost + "/js/moment.min.js", function (data, textStatus, jqxhr) {
+
+      });
+
+
+      // console.log("userid send form dailodailo>>>",clientSideUserId)
+      node.innerHTML = data3
+    });
+    request.fail(function (jqXHR, textStatus) {
+      alert("Request failed: " + textStatus);
+    });
+  } else {
+    pMsg.get(serverHost + '/user/supportlogin/' + toloer, function (data, textStatus, jqXHR) {  // success callback
+
+      pMsg.getScript({
+        url: "https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js",
+        cache: true,
+        async: true
+      }
+        , function (data, textStatus, jqxhr) {
+          pMsg.getScript(
+            {
+              url: serverHost + "/js/scriptForGuestSignup.js",
+              cache: true, async: true
+            }, function (data, textStatus, jqxhr) {
+
+              // console.log( "Load was performed." );
+            });
+        });
+
+
+      pMsg.getScript({
+        url: "https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js",
+        async: true,
+        cache: true
+      },
+        function (data, textStatus, jqxhr) {
+          pMsg.getScript({
+            url: serverHost + "/js/DomRedirectScript.js",
+            cache: true, async: true
+          }, function (data, textStatus, jqxhr) {
+
+            // console.log( "Load was performed." );
+          });
+
+        });
+
+      pMsg.getScript(serverHost + "/js/custom.js", function (data, textStatus, jqxhr) {
+
+        // console.log( "Load was performed ." );
+      });
+
+      node.innerHTML = data
+      return false;
+    });//end of jquery get
+
+  }//end of else    
+
+
+};
+document.getElementsByTagName("head")[0].appendChild(script);
+}());

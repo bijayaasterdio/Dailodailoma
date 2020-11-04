@@ -1,0 +1,138 @@
+/*==== Initial====*/
+
+body {-ms-overflow-style: none;scrollbar-width: none; }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.h16 {font-size: 16px;}
+.bold {font-weight: bold;}
+
+.w49{width: 49%;}
+.no-gutter {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.no-gutter > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.flex {display: flex;}
+.inline-flex {display: inline-flex;}
+.flex-right {justify-content: flex-end;}
+
+.small {font-size: 12px;}
+.right {float: right;}
+.last {margin-bottom: 10rem;}
+
+/*====Content====*/
+
+
+
+#wrapper.chat_page .container-fluid {
+    padding: 0;
+    position: fixed;
+}
+
+.message-wrap {background-color: #FAFAFA;height: 83vh;padding: 10%;overflow: scroll;}
+.message-wrap::-webkit-scrollbar {display: none;}
+
+.top .title {margin-bottom: 1.6rem;}
+
+.top .nav {}
+.top .nav .nav-item {padding: 0;}
+.top .nav .nav-item {padding: 0;}
+.top .nav-pills .nav-item .nav-link {border-top: 1px solid #BDBDBD;border-bottom: 1px solid #BDBDBD;border-radius: 0px;}
+.top .nav-pills .nav-item:first-child .nav-link {border-left: 1px solid #BDBDBD;}
+.top .nav-pills .nav-item:last-child .nav-link {border-right: 1px solid #BDBDBD;}
+.top .nav-pills .nav-link.active {color: #D2232A;background-color: #FFF;-webkit-box-shadow: -1px -1px 18px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    -1px -1px 18px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         -1px -1px 18px 0px rgba(50, 50, 50, 0.75);}
+
+.low .title {padding-bottom: 1rem;margin: 2rem 0rem;border-bottom: 1px solid #BDBDBD;}
+.low .title .dropdown-toggle {}
+.low .title .btn-danger {padding: 0.3rem 0.7rem;border-radius: 31px;box-shadow: none !important;}
+
+.message_list>a {padding: 1rem;display: block;border-left: 4px solid transparent;}
+.message_list>a.activ {background-color: #E5B0B3; border-left: 4px solid #D2232A;}
+
+.info-wrap .profile-pic {float: left;}
+.profile-pic {margin-right: 1rem;position: relative;}
+.chat-img {background-image: url(../img/john_doe.jpg);background-size: contain;width: 50px; height: 50px;border-radius: 10rem;}
+.indicator {background-color: #219653;width: 0.8rem;height: 0.8rem;border-radius: 10px;position: absolute;bottom: 0;right: 0;}
+.intro .nm, .intro .small {}
+.intro .small {}
+.search{border-radius: 50px;}
+.search img {width: 1rem;height: 1.6rem;}
+
+
+#demo-2 input[type=search] {background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;border: solid 1px #ccc;padding: 9px 10px 9px 32px;width: 55px;-webkit-border-radius: 10em;-moz-border-radius: 10em;border-radius: 10em;-webkit-transition: all .5s;-moz-transition: all .5s;transition: all .5s;}
+#demo-2 input[type=search] {width: 2.6rem;padding-left: 10px;color: transparent;cursor: pointer;}
+#demo-2 input[type=search]:hover {background-color: #fff;}
+#demo-2 input[type=search]:focus {width: 130px;padding-left: 32px;color: #000;background-color: #fff;cursor: auto;}
+#demo-2 input:-moz-placeholder {color: transparent;}
+#demo-2 input::-webkit-input-placeholder {color: transparent;}
+
+
+
+
+.chat-area {}
+.chat-area .head {background-color: #FFF;padding: 1rem;}
+.chat-area .head>div, .chat-area .head>a{background-color: #FFF;display: flex;flex-direction: row;-ms-flex-direction: row;}
+.chat-area .head>a {margin-left: auto;box-shadow: none;color: #D2232A;padding: 11px 20px;}
+.chat-area .chat-cont {padding: 2rem;background-color: #EDEDED;height: 83vh;overflow: scroll;position: relative;-ms-overflow-style: none;scrollbar-width: none;}
+.chat-area .chat-cont::-webkit-scrollbar {display: none;}
+.chat-area .chat-cont .client {margin: 1rem} 
+.chat-area .chat-cont .client a {margin-top: 16px;margin-left: 16px;margin-right: 16px;}
+
+.chat-area .chat-cont .client::-webkit-scrollbar {display: none;}
+.chat-area .chat-cont .client.time {margin: 3rem 0rem;}
+.chat-area .chat-cont .client.last {margin-bottom:10rem;}
+.chat-area .chat-cont .client .message {background-color: #FFF;padding: 1rem;display: table;margin-bottom: 0.2rem;}
+.chat-area .chat-cont .client .message.first-state {border-radius: 0px 0.6rem 0.6rem 0px;}
+.chat-area .chat-cont .client .message.second-state {border-radius: 0px 0.6rem 0.6rem 0.6rem;}
+.offer-but {margin-left: auto;}
+ .chat-area .chat-cont .client.reciever {flex-direction: row-reverse;}
+ .chat-area .chat-cont .client.reciever .profile-pic {margin-right: 0;margin-left: 1rem;}
+ .chat-area .chat-cont .client.reciever .message {background-color: #E5B0B3;}
+.chat-area .chat-cont .time span {margin: 0 auto;background-color: #E0E0E0;padding: 0.5rem 2.4rem;border-radius: 4rem;-webkit-box-shadow: 0px 6px 7px 2px rgba(50, 50, 50, 0.32);-moz-box-shadow:0px 6px 7px 2px rgba(50, 50, 50, 0.32);box-shadow:0px 6px 7px 2px rgba(50, 50, 50, 0.32);}
+.chat-area .chat-cont .client.reciever .message.first-state {border-radius: 0.6rem 0rem 0rem 0.6rem;}
+.chat-area .chat-cont .client.reciever .message.second-state {border-radius: 0.6rem 0rem 0.6rem 0.6rem;}
+
+.chat-area .chat-cont .client .images .img-box {width: 24%; background-image: url(../img/john_doe.jpg);height: 6rem;margin: 0px 0.1rem;}
+
+
+.chat-area .bottom-float {background-color: #FFF;position:fixed;margin-left: 27%;margin-right: 27%;left: 0;right: 0;bottom: 2rem; text-align: center;align-items: baseline;border-radius: 8px;}
+.chat-area .bottom-float input {flex-grow: 1;}
+.chat-area .bottom-float a {padding: 1rem;}
+
+
+.detail-area {height: 83vh;overflow: scroll;}
+.detail-area::-webkit-scrollbar {display: none;}
+.detail-area .user-det {background-color: #F5F5F5;padding: 2rem;}
+.detail-area .user-det .profile-pic {text-align: center;margin-bottom: 1rem;}
+.detail-area .user-det .profile-pic .chat-img {}
+.detail-area .user-det .profile-pic p {font-weight: 900;}
+.detail-area .user-det .profile-pic .chat-img {margin:0.7rem auto;width: 8rem;height: 8rem;}
+.detail-area .user-det .info>div {justify-content: space-between;margin: auto;text-align: center;}
+
+.detail-area .listing {padding:9% 10% 10%;}
+.detail-area .listing h5 {margin-bottom: 15px;font-weight: 700;}
+.detail-area .listing .listing-item .info {margin-bottom: 30px;}
+.detail-area .listing .listing-item .info .flex {justify-content: space-between;align-items: baseline;}
+.detail-area .listing .listing-item .info .flex span {background-color: #D2232A;color: #FFF;padding: 1px 8px;border-radius: 20px;}
+.detail-area .listing .listing-item .btn-primary {
+    color: #D2232A !important;width: 100%;
+    border-color: transparent;
+    background-color: #E0E0E0;
+    box-shadow:none;
+}
+
+
+.sugg-prof {padding: 0 10%;}
+.sugg-prof h5 {margin-bottom: 16px;font-weight: 700;}
+.sugg-prof .prof-list {justify-content: space-between;margin-bottom: 16px;}
+.sugg-prof .prof-list .nm.flex {font-weight: 700;}
