@@ -1234,7 +1234,7 @@
     <div class="chat_page" id="wrapper">
         <div class="container-fluid">
             <div class="row no-gutter">
-                <div class="col-lg-3">
+                <div class="col-2 col-sm-2 col-md-2 col-lg-4 col-xl-3">
                     <div class="message-wrap">
                         <div class="top">
                             <div class="title">
@@ -1283,10 +1283,11 @@
                                         <div class="chat-img">
                                             <div class="indicator"></div>
                                         </div>
-
                                     </div>
                                     <div class="chat-sideinfo">
+
                                         <div class="intro">
+
                                             <div class="nm inline-flex">Elenor Pena</div>
                                             <div class="small inline-flex flex-right right">5 minutes ago</div>
                                         </div>
@@ -1300,8 +1301,9 @@
                                 </a>
                                 <a href="#" class="info-wrap activ">
                                     <div class="profile-pic">
-                                        <div class="chat-img"></div>
-                                        <div class="indicator"></div>
+                                        <div class="chat-img">
+                                            <div class="indicator"></div>
+                                        </div>
                                     </div>
                                     <div class="chat-sideinfo">
                                         <div class="intro">
@@ -1318,8 +1320,9 @@
                                 </a>
                                 <a href="#" class="info-wrap">
                                     <div class="profile-pic">
-                                        <div class="chat-img"></div>
-                                        <div class="indicator"></div>
+                                        <div class="chat-img">
+                                            <div class="indicator"></div>
+                                        </div>
                                     </div>
                                     <div class="chat-sideinfo">
                                         <div class="intro">
@@ -1336,8 +1339,9 @@
                                 </a>
                                 <a href="#" class="info-wrap">
                                     <div class="profile-pic">
-                                        <div class="chat-img"></div>
-                                        <div class="indicator"></div>
+                                        <div class="chat-img">
+                                            <div class="indicator"></div>
+                                        </div>
                                     </div>
                                     <div class="chat-sideinfo">
                                         <div class="intro">
@@ -1364,11 +1368,11 @@
                     </div>
 
                 </div>
-                <div class="col-lg-6">
+                <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-6">
                     <div class="chat-area">
                         <div class="head flex">
                             <div class="profile-pic">
-                                <div class="chat-img"></div>
+                                <div class="chat-img"><div class="indicator"></div></div>
                             </div>
                             <div class="chat-sideinfo">
                                 <div class="intro">
@@ -1380,62 +1384,77 @@
 
                         </div>
                         <div class="chat-cont">
-                            <div class="client flex">
-                                <div class="profile-pic">
-                                    <div class="chat-img"></div>
-                                </div>
-                                <div class="main">
-                                    <p class="message second-state">Can I buy this product on this price?</p>
-                                    <span>1 day ago</span>
+                            <div class="client flex offer">
+                                <div class="flex">
+                                    <div class="profile-pic">
+                                        <div class="chat-img">
+                                            <div class="indicator"></div>
+                                        </div>
+                                    </div>
+                                    <div class="main">
+                                        <div class="wrap-m flex">
+                                            <p class="message second-state">Can I buy this product on this price?</p>
+                                            <a href="#"><img src="icon/carbon_overflow-menu-horizontal.svg" alt=""></a>
+                                        </div>
+                                        <span>1 day ago</span>
 
+                                    </div>
                                 </div>
-                                <a href="#"><img src="icon/carbon_overflow-menu-horizontal.svg" alt=""></a>
                                 <div class="offer-but">
                                     <button class="btn btn-danger">Make an Offer</button>
                                 </div>
                             </div>
                             <div class="client reciever flex">
                                 <div class="profile-pic">
-                                    <div class="chat-img"></div>
+                                    <div class="chat-img"><div class="indicator"></div></div>
                                 </div>
                                 <div class="main">
-                                    <p class="message second-state">Can I buy this product on this price?</p>
+                                    <div class="wrap-m flex">
+                                        <a href="#"><img src="icon/carbon_overflow-menu-horizontal.svg" alt=""></a>
+                                        <p class="message second-state">Can I buy this product on this price?</p>
+
+                                    </div>
                                     <span class="right">1 day ago <img src="icon/check.svg" alt=""></span>
 
                                 </div>
-                                <a href="#"><img src="icon/carbon_overflow-menu-horizontal.svg" alt=""></a>
+
                             </div>
                             <div class="client time flex">
                                 <span>Today</span>
                             </div>
                             <div class="client flex">
                                 <div class="profile-pic">
-                                    <div class="chat-img"></div>
+                                    <div class="chat-img"><div class="indicator"></div></div>
                                 </div>
                                 <div class="main">
-                                    <p class="message first-state">Can I buy this product on this price?</p>
-                                    <p class="message second-state">or New </p>
+                                    <div class="wrap-m flex">
+                                        <p class="message first-state">Can I buy this product on this price?</p>
+                                        <a href="#"><img src="icon/carbon_overflow-menu-horizontal.svg" alt=""></a>
+                                    </div>
+                                    <div class="wrap-m flex">
+                                        <p class="message second-state">Can I buy this product on this price?</p>
+                                        <a href="#"><img src="icon/carbon_overflow-menu-horizontal.svg" alt=""></a>
+                                    </div>
                                     <span>1 day ago</span>
 
                                 </div>
-                                <a href="#"><img src="icon/carbon_overflow-menu-horizontal.svg" alt=""></a>
                             </div>
                             <div class="client reciever flex last">
                                 <div class="profile-pic">
-                                    <div class="chat-img"></div>
+                                    <div class="chat-img"><div class="indicator"></div></div>
                                 </div>
                                 <div class="main">
-                                    <p class="message second-state">Amet minim mollit non deserunt ullamco est Amet minim mollit non deserunt ullamco est</p>
+                                    <div class="wrap-m flex">
+                                        <a href="#"><img src="icon/carbon_overflow-menu-horizontal.svg" alt=""></a>
+                                        <p class="message second-state">Can I buy this product on this price?</p>
+                                    </div>
                                     <div class="images flex flex-right">
                                         <a class="img-box"></a>
                                         <a class="img-box"></a>
                                         <a class="img-box"></a>
                                         <a class="img-box"></a>
                                     </div>
-                                    <span class="right">1 day ago <img src="icon/check.svg" alt=""></span>
-
                                 </div>
-                                <a href="#"><img src="icon/carbon_overflow-menu-horizontal.svg" alt=""></a>
                             </div>
                             <div class="bottom-float flex">
                                 <a href="#"><img src="icon/heroicons-outline_menu.svg" alt=""></a>
@@ -1447,7 +1466,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div id="mySidenav" class="col-lg-3 col-xl-3">
                     <div class="detail-area">
                         <div class="user-det">
                             <div class="profile-pic">
@@ -1473,7 +1492,7 @@
                             <h5>Listing</h5>
                             <div class="listing-item">
                                 <div class="row">
-                                    <div class="col-sm-6">
+                                    <div class="col-12 col-sm-12 col-xl-6 col-lg-12 ">
                                         <div class="item-img">
                                             <img src="img/listing.png" width="100%">
                                         </div>
@@ -1485,7 +1504,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-12 col-sm-12 col-xl-6 col-lg-12 ">
                                         <div class="item-img">
                                             <img src="img/listing.png" width="100%">
                                         </div>
@@ -1615,7 +1634,7 @@
                                 </div>
                                 <a class="#"><img src="icon/gridicons_chat.svg" alt=""></a>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -1782,5 +1801,6 @@
     });
 
 </script>
+
 
 </html>

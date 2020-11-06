@@ -61,7 +61,7 @@ box-shadow:        0px 0px 9px 0px rgba(50, 50, 50, 0.55)}
 
 .info-wrap .profile-pic {float: left;}
 .profile-pic {margin-right: 1rem;position: relative;}
-.chat-img {background-image: url(../img/john_doe.jpg);background-size: contain;width: 50px; height: 50px;border-radius: 10rem;}
+.chat-img {background-image: url(../img/john_doe.jpg);background-size: contain;width: 50px; height: 50px;border-radius: 10rem;position: relative;}
 .indicator {background-color: #219653;width: 0.8rem;height: 0.8rem;border-radius: 10px;position: absolute;bottom: 0;right: 0;}
 .intro .nm, .intro .small {}
 .intro .small {}
@@ -85,24 +85,24 @@ box-shadow:        0px 0px 9px 0px rgba(50, 50, 50, 0.55)}
 .chat-area .head>a {margin-left: auto;box-shadow: none;color: #D2232A;padding: 11px 20px;}
 .chat-area .chat-cont {padding: 2rem;background-color: #EDEDED;height: 83vh;overflow: scroll;position: relative;-ms-overflow-style: none;scrollbar-width: none;}
 .chat-area .chat-cont::-webkit-scrollbar {display: none;}
-.chat-area .chat-cont .client {margin: 1rem} 
+.chat-area .chat-cont .client {margin: 1rem;max-width: 60%;} 
 .chat-area .chat-cont .client a {margin-top: 16px;margin-left: 16px;margin-right: 16px;}
 
 .chat-area .chat-cont .client::-webkit-scrollbar {display: none;}
-.chat-area .chat-cont .client.time {margin: 3rem 0rem;}
+.chat-area .chat-cont .client.time {margin: 3rem 0rem;width: 100%;max-width: 100%;}
 .chat-area .chat-cont .client.last {margin-bottom:10rem;}
 .chat-area .chat-cont .client .message {background-color: #FFF;padding: 1rem;display: table;margin-bottom: 0.2rem;}
 .chat-area .chat-cont .client .message.first-state {border-radius: 0px 0.6rem 0.6rem 0px;}
 .chat-area .chat-cont .client .message.second-state {border-radius: 0px 0.6rem 0.6rem 0.6rem;}
 .offer-but {margin-left: auto;}
- .chat-area .chat-cont .client.reciever {flex-direction: row-reverse;}
+ .chat-area .chat-cont .client.reciever {flex-direction: row-reverse;float: right;}
  .chat-area .chat-cont .client.reciever .profile-pic {margin-right: 0;margin-left: 1rem;}
  .chat-area .chat-cont .client.reciever .message {background-color: #E5B0B3;}
 .chat-area .chat-cont .time span {margin: 0 auto;background-color: #E0E0E0;padding: 0.5rem 2.4rem;border-radius: 4rem;-webkit-box-shadow: 0px 6px 7px 2px rgba(50, 50, 50, 0.32);-moz-box-shadow:0px 6px 7px 2px rgba(50, 50, 50, 0.32);box-shadow:0px 6px 7px 2px rgba(50, 50, 50, 0.32);}
 .chat-area .chat-cont .client.reciever .message.first-state {border-radius: 0.6rem 0rem 0rem 0.6rem;}
 .chat-area .chat-cont .client.reciever .message.second-state {border-radius: 0.6rem 0rem 0.6rem 0.6rem;}
 
-.chat-area .chat-cont .client .images .img-box {width: 24%; background-image: url(../img/john_doe.jpg);height: 6rem;margin: 0px 0.1rem;}
+.chat-area .chat-cont .client .images .img-box {width: 24%; background-image: url(../img/john_doe.jpg);height: 6rem;margin: 0px 0.1rem;background-size: cover;}
 
 
 .chat-area .bottom-float {background-color: #FFF;position:fixed;margin-left: 27%;margin-right: 27%;left: 0;right: 0;bottom: 2rem; text-align: center;align-items: baseline;border-radius: 8px;}
@@ -124,15 +124,89 @@ box-shadow:        0px 0px 9px 0px rgba(50, 50, 50, 0.55)}
 .detail-area .listing .listing-item .info {margin-bottom: 30px;}
 .detail-area .listing .listing-item .info .flex {justify-content: space-between;align-items: baseline;}
 .detail-area .listing .listing-item .info .flex span {background-color: #D2232A;color: #FFF;padding: 1px 8px;border-radius: 20px;}
-.detail-area .listing .listing-item .btn-primary {
-    color: #D2232A !important;width: 100%;
-    border-color: transparent;
-    background-color: #E0E0E0;
-    box-shadow:none;
-}
+.detail-area .listing .listing-item .btn-primary {color: #D2232A !important;width: 100%;border-color: transparent;background-color: #E0E0E0;box-shadow:none;}
 
 
 .sugg-prof {padding: 0 10%;}
 .sugg-prof h5 {margin-bottom: 16px;font-weight: 700;}
 .sugg-prof .prof-list {justify-content: space-between;margin-bottom: 16px;}
 .sugg-prof .prof-list .nm.flex {font-weight: 700;}
+
+.chat-area .chat-cont .client.offer {max-width: 100%;}
+.chat-area .chat-cont .client.offer>.flex{max-width: 60%;}
+
+
+
+
+/*Responsive*/
+
+@media (min-width: 1600px) {
+    
+}
+@media (min-width: 1200px) and (max-width: 1260px) {
+    .detail-area .listing {
+    padding: 9% 15px 10%;}
+    .chat-area .chat-cont {padding: 0;}
+}
+
+@media (min-width: 1200px) {
+    .message-wrap {padding: 15px;}
+    
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .message-wrap {padding: 15px;}
+    .chat-area .bottom-float {margin-left: 37%;margin-right: 4%;}
+    .chat-area .chat-cont {padding: 0;}
+}
+@media (min-width: 992px) {
+    
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .info-wrap .profile-pic {float: none;}
+    .message-wrap {padding: 0;}
+    .chat-sideinfo, .message-wrap .top, .inline-flex .dropdown-toggle {display: none;}
+    .chat-area .bottom-float {margin-left: 23%;margin-right: 7%;}
+    .low .title .inline-flex:last-child {width: 100%;justify-content: space-evenly;}
+    .message_list .chat-img {margin: 0 auto;}
+    .detail-area .listing {padding: 9% 15px 10%;}
+    .chat-area .chat-cont {padding: 0;}
+    .low .title .dropdown {display: none;}
+    .low .title {padding-bottom: 2rem;}
+}
+@media (min-width: 768px){
+}
+@media (max-width: 768px) {
+    .info-wrap .profile-pic {float: none;}
+    .message-wrap {padding: 0;}
+    .chat-sideinfo, .message-wrap .top, .inline-flex .dropdown-toggle {display: none;}
+    .chat-area .bottom-float {margin-left: 23%;margin-right: 7%;}
+    .low .title .inline-flex:last-child {width: 100%;justify-content: space-evenly;}
+    .message_list .chat-img {margin: 0 auto;}
+    .detail-area .listing {padding: 9% 15px 10%;}
+    .chat-area .chat-cont {padding: 0;}
+    .offer {flex-direction: column;max-width: 100% !important;}
+    .offer-but {margin: 0 auto;}
+    .low .title .dropdown {display: none;}
+    .low .title {padding-bottom: 2rem;}
+}
+@media (max-width: 414px){
+    
+}
+@media (max-width: 767px) {
+    
+}
+
+
+@media (max-width: 576px) {
+    
+}
+
+@media (max-width: 480px) {
+    
+}
+@media (min-width: 414px) and (max-width: 638px)  {
+    
+}
+@media (max-width: 360px) {}
+@media (max-width: 320px) {}
