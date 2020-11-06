@@ -105,7 +105,16 @@ box-shadow:        0px 0px 9px 0px rgba(50, 50, 50, 0.55)}
 .chat-area .chat-cont .client .images .img-box {width: 24%; background-image: url(../img/john_doe.jpg);height: 6rem;margin: 0px 0.1rem;background-size: cover;}
 
 
-.chat-area .bottom-float {background-color: #FFF;position:fixed;margin-left: 27%;margin-right: 27%;left: 0;right: 0;bottom: 2rem; text-align: center;align-items: baseline;border-radius: 8px;}
+.chat-area .bottom-float {background-color: #FFF;
+    position: fixed;
+    margin-left: 25%;
+    margin-right: 25%;
+    left: 0;
+    right: 0;
+    bottom: 0rem;
+    text-align: center;
+    align-items: baseline;
+    border-radius: 0;}
 .chat-area .bottom-float input {flex-grow: 1;}
 .chat-area .bottom-float a {padding: 1rem;}
 
@@ -157,7 +166,7 @@ box-shadow:        0px 0px 9px 0px rgba(50, 50, 50, 0.55)}
 
 @media (min-width: 992px) and (max-width: 1200px) {
     .message-wrap {padding: 15px;}
-    .chat-area .bottom-float {margin-left: 37%;margin-right: 4%;}
+    .chat-area .bottom-float {margin-left: 33.4%;margin-right: 0;}
     .chat-area .chat-cont {padding: 0;}
 }
 @media (min-width: 992px) {
@@ -167,7 +176,8 @@ box-shadow:        0px 0px 9px 0px rgba(50, 50, 50, 0.55)}
     .info-wrap .profile-pic {float: none;}
     .message-wrap {padding: 0;}
     .chat-sideinfo, .message-wrap .top, .inline-flex .dropdown-toggle {display: none;}
-    .chat-area .bottom-float {margin-left: 23%;margin-right: 7%;}
+    .chat-area .bottom-float {    margin-left: 16.7%;
+    margin-right: 0;}
     .low .title .inline-flex:last-child {width: 100%;justify-content: space-evenly;}
     .message_list .chat-img {margin: 0 auto;}
     .detail-area .listing {padding: 9% 15px 10%;}
@@ -182,7 +192,7 @@ box-shadow:        0px 0px 9px 0px rgba(50, 50, 50, 0.55)}
     .info-wrap .profile-pic {float: none;}
     .message-wrap {padding: 0;}
     .chat-sideinfo, .message-wrap .top, .inline-flex .dropdown-toggle {display: none;}
-    .chat-area .bottom-float {margin-left: 23%;margin-right: 7%;}
+    .chat-area .bottom-float {margin-left: 16.7%;margin-right: 0;}
     .low .title .inline-flex:last-child {width: 100%;justify-content: space-evenly;}
     .message_list .chat-img {margin: 0 auto;}
     .detail-area .listing {padding: 9% 15px 10%;}
